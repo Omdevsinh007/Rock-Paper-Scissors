@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/rock-paper-scissors.png">
+    <meta name="Rock-Paper-Scissor" content="Play Rock-Paper_scissors game for free.">
+    <link rel="stylesheet" href="./css/game.css" id="meta"/>
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="restart" title="Restarts the whole game">Restart</button>
+      </nav>
+    </header>
+    <section id="container">
+      <div id="main">
+        <div id="userScoreSide">
+          <div id="userScore">
+            <div>Your Score</div>
+            <div id="user"></div>
+          </div>
+        </div>
+        <div id="display">
+          <div id="content">
+          </div>
+          <div id="allImg">
+            <img src="../images/rock-paper-scissors.png" id="loader" alt="Loader"/>
+            <img src="../images/rock-paper-scissors.png" id="img"/>
+          </div>
+        </div>
+        <div id="machineScoreSide">
+          <div id="machineScore">
+            <div>Machine Score</div>
+            <div id="machine"></div>
+          </div>
+        </div>
+      </div>
+      <div id="btn">
+        <div>
+          <button id="start" title="Starts the game">Start</button>
+        </div>
+        <div id="play">
+          <button class="btn" id="rock"><img src="./images/rock.png" title="Rock" /></button>
+          <button class="btn" id="papper"><img src="./images/paper.png" title="Papper" /></button>
+          <button class="btn" id="scissor"><img src="./images/scissors.png" title="Scissor" /></button>
+        </div>
+      </div>
+    </section>
+    <script src="./dist/game.js"></script>
+  </body>
+</html>
